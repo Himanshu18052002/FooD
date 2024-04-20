@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(74, 51, 191);
+  background: linear-gradient(
+    342deg,
+    rgba(74, 51, 191, 1) 0%,
+    rgba(241, 70, 102, 1) 70%
+  );
+  padding: 13px;
+  position: absolute;
+  width: calc(100vw - 25px);
+  top: 0;
+}
+.menuContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 8vw;
+}
+.container a {
+  color: white;
+  margin: 0 8px;
+}
+.userIcon,
+.cartIcon {
+  z-index: 7;
+  position: relative;
+  transition: opacity 0.4s ease-in;
+}
+/* Hide the.userIcon and.cartIcon */
+.userIcon:hover,
+.cartIcon:hover {
+  transition: opacity 0.4s ease-in;
+  opacity: 0;
+}
+
+/* Show the text before the.cart and.user */
+.cart::before,
+.user::before {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+/* Adjust the positioning of the text */
+.cart::before {
+  content: "Cart";
+  position: absolute;
+  top: 51%;
+  right: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.user::before {
+  content: "User";
+  position: absolute;
+  top: 51%;
+  right: 5%;
+  transform: translate(50%, -50%);
+}
+
+/* Remove the hover effect on the text */
+.cart:hover::before,
+.user:hover::before {
+  opacity: 1;
+  transition: opacity 0.4s ease-in;
+}

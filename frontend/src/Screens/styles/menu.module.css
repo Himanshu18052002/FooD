@@ -1,0 +1,96 @@
+.search {
+  background-color: white;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+.searchContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 2%;
+  height: 90%;
+}
+.searchContainer label {
+  font-size: 1.5rem;
+}
+.searchContainer input {
+  width: 30vw;
+  min-width: 300px;
+  border-radius: 30px;
+  border: 1px solid salmon;
+  height: 2vh;
+  padding: 16px;
+  font-size: 1.2rem;
+}
+.searchContainer button {
+  width: auto;
+  height: 45px;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #fff;
+  color: #f14666;
+  border: 1px solid #b52f48;
+  transition: background-color ease-in-out 0.5s, color ease-in-out 0.3s;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchContainer button:hover {
+  background-color: #f14666;
+  color: #fff;
+}
+.menu {
+  background: url(../../Assets//Background/rm309-adj-01.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-top: 5%;
+  padding: 15px 5px 20px 5px;
+  text-align: center;
+}
+.menuItemsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuItems {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 10px 0;
+  border-radius: 8px;
+  transition: box-shadow ease-in 0.5s;
+}
+.menuContainer:hover {
+  box-shadow: -5px 9px 17px #313131;
+}
+.menuContainer h2 {
+  font-weight: 400;
+  margin: 25px 0 0 0;
+}
+.menuContainer p {
+  margin: 7px 0 0 0;
+  color: #959595;
+}
+.imageContainer {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 250px;
+}
+.menuContainer img {
+  width: 500px;
+  height: 300px;
+}

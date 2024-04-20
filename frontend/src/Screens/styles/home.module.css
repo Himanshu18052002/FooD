@@ -1,0 +1,117 @@
+.mainContainer {
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin-top: 2.8%;
+  padding: 15px;
+  width: calc(100vw - 25px);
+  height: 65vh;
+  background-image: url(../../Assets/Background/rm309-adj-01.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+}
+.mainContainer h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.mainContainer p {
+  font-size: 1.2rem;
+  line-height: 35px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.imageContainer {
+  width: 40%;
+  position: absolute;
+  right: -5.6%;
+}
+.image {
+  width: 54%;
+  border-radius: 10px 40px 10px 40px;
+}
+.chefImage {
+  width: 30%;
+  position: relative;
+  right: -2.8%;
+  bottom: -5%;
+  filter: drop-shadow(-4px 13px 15px #2a2626);
+}
+.description {
+  width: 73%;
+  margin-left: 5%;
+}
+.button {
+  width: auto;
+  height: 55px;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #fff;
+  color: #f14666;
+  border: 1px solid #b52f48;
+  transition: background-color ease-in-out 0.5s, color ease-in-out 0.3s;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonContainer {
+  display: flex;
+  gap: 6%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.button:hover {
+  background-color: #f14666;
+  color: #fff;
+}
+.mainContainer1 {
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin-top: 2.8%;
+  padding: 15px;
+  width: calc(100vw - 25px);
+  height: 65vh;
+  background-image: url(../../Assets/Background/rm309-adj-01.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  width: 80%;
+  box-shadow: -15px 18px 40px #605959;
+  border-radius: 10px;
+  padding: 15px;
+}
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 360px;
+  border: 1px solid pink;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.imageBox {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+}
+.cardBox p {
+  margin: 2.5px 0;
+  font-size: 1rem;
+  color: #82827a;
+}
